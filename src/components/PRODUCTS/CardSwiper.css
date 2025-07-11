@@ -1,0 +1,40 @@
+.product-section {
+  padding: 20px 20px;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.view-all-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.view-all-button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 20px 35px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.products-swiper {
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+
+@media (max-width: 768px)
+{
+  .products-swiper {
+    flex-direction: column;
+  }
+}

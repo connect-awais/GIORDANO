@@ -1,0 +1,141 @@
+/* Main Filter Section */
+.filter-section {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 350px;
+  font-family: var(--main-family);
+}
+
+.filter-section h4 {
+  margin: 15px 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+}
+
+/* Select and Number Inputs */
+.filter-section select,
+.filter-section input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #dddddd;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+}
+
+/* Size Options */
+.filter-size-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-direction: column;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+.filter-size-options label {
+  font-size: 14px;
+}
+
+/* Price Filter Section */
+.price-filter {
+  width: 100%;
+  max-width: 350px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.price-filter h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 10px;
+}
+
+.price-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  gap: 5px;
+  width: 100px;
+}
+
+.price-box input {
+  border: none;
+  width: 80px;
+  padding: 10px;
+  outline: none;
+  font-size: 14px;
+  color: #7b7b7b;
+}
+
+/* Slider Container */
+.slider-container {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Container */
+.filter-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* FILTER button (visible only on mobile) */
+.filter-toggle-btn {
+  display: block;              
+  width: calc(100vw - 30px);
+  max-width: 100%;             
+  margin: 0 auto;      
+  padding: 10px;        
+  font-size: 16px;
+  font-family: var(--main-family);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;      
+  border: 1px solid #dddddd;
+  font-weight: 500;
+}
+/* Mobile dropdown content */
+.mobile-dropdown {
+  padding: 5px 5px;
+  margin-top: 7px;
+}
+
+/* Desktop filters (default view) */
+.desktop-filters {
+  display: block;
+}
+
+@media (max-width: 768px)
+{
+  .filter-section {
+    max-width: 100%;
+  }
+
+  .price-filter {
+    max-width: 100%;
+  }
+  .filter-section h4,
+  .price-filter h3 {
+    font-size: 14px;
+  }
+  .slider-container {
+    padding-left: 10px;
+  }
+}

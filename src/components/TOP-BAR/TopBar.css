@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    padding: 12px;
+    background-color: black;
+    font-family: var(--main-family);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-links a{
+    color: white;
+}
+
+.main-txt {
+    color: white;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.main-txt span {
+    font-weight: 700;
+}
+
+@media (max-width: 950px) {
+    .social-links {
+        display: none;
+    }
+}

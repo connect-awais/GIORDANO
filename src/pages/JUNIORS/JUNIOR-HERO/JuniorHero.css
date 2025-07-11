@@ -1,0 +1,31 @@
+.junior-layout {
+  display: flex;
+  padding: 0 60px;
+  margin-bottom: 100px;
+}
+
+.junior-product-grid {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--main-family);
+  cursor: pointer;
+}
+
+@media (max-width: 768px)
+{
+  .junior-layout {
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .junior-sidebar {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .junior-product-grid {
+    flex-direction: column;
+  }
+}

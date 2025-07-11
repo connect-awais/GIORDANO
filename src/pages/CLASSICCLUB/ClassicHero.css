@@ -1,0 +1,19 @@
+.classic-layout {
+  display: flex;
+  padding: 0 60px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px)
+{
+  .classic-layout {
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .classic-sidebar {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+}
