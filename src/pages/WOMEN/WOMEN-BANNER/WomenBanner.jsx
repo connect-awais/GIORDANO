@@ -1,6 +1,6 @@
 import React from 'react'
 import './WomenBanner.css'
-import WomenBannerImg from '../../../assets/WOMEN IMG/BANNER/WomenBanner.webp'
+import WomenBannerImg from '../../../assets/WOMEN-IMG/BANNER/WomenBanner.webp'
 
 import WomenHero from '../WOMEN-HERO/WomenHero'
 const WomenBanner = () => {

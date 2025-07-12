@@ -4,10 +4,10 @@ import './Header.css'
 import { IoIosSearch } from "react-icons/io";
 import { MdPersonOutline, MdOutlineShoppingCart } from "react-icons/md";
 import { FiMenu, FiX } from "react-icons/fi";
-import Logo from '../../assets/HEADER IMG/logo.svg'
+import Logo from '../../assets/HEADER-IMG/logo.svg'
 import CartSideBar from '../CARTSIDEBAR/CartSideBar'
 import { MdKeyboardArrowDown } from "react-icons/md";
-import MenImg from '../../assets/HEADER IMG/MEN-IMG.jpeg'
+import MenImg from '../../assets/HEADER-IMG/MEN-IMG.jpeg'
 import {
   FaFacebookF,
   FaYoutube,

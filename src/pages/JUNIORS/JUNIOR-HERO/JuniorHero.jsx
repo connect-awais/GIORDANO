@@ -2,8 +2,8 @@ import React from 'react'
 
 import ProductCard from '../../../components/PRODUCTS/Card'
 
-import JuniorPolo1 from '../../../assets/JUNIOR IMG/JUNIOR/JuniorPolo1.webp'
-import JuniorShorts1 from '../../../assets/JUNIOR IMG/JUNIOR/JunniorShorts1.webp'
+import JuniorPolo1 from '../../../assets/JUNIOR-IMG/JUNIOR/JuniorPolo1.webp'
+import JuniorShorts1 from '../../../assets/JUNIOR-IMG/JUNIOR/JunniorShorts1.webp'
 import './JuniorHero.css'
 
 import Filter from '../../../components/FILTERS/Filter'

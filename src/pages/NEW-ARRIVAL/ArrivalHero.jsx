@@ -4,25 +4,25 @@ import Filter from '../../components/FILTERS/Filter';
 import './ArrivalHero.css';
 
 // Product Images
-import BadgeCap from '../../assets/NEW ARRIVALS/HERO/BadgeCap.webp';
-import ClassicCap from '../../assets/NEW ARRIVALS/HERO/ClassicCap.webp';
-import ClassicJogger from '../../assets/NEW ARRIVALS/HERO/ClassicJogger.webp';
-import ClassicPolo1 from '../../assets/NEW ARRIVALS/HERO/ClassicPolo1.webp';
-import CouragePolo from '../../assets/NEW ARRIVALS/HERO/CouragePolo.webp';
-import CouragePoloMen from '../../assets/NEW ARRIVALS/HERO/CouragePoloMen.webp';
-import InfinitePolo from '../../assets/NEW ARRIVALS/HERO/InfinitePolo.jpeg';
-import InfinitePoloMen from '../../assets/NEW ARRIVALS/HERO/InfinitePoloMen.webp';
-import JoggerPant from '../../assets/NEW ARRIVALS/HERO/JoggerPant.webp';
-import LogoPolo from '../../assets/NEW ARRIVALS/HERO/LogoPolo.webp';
-import MensDenim from '../../assets/NEW ARRIVALS/HERO/MensDenim.jpeg';
-import OxfordShirt from '../../assets/NEW ARRIVALS/HERO/OxfordShirtMen.webp';
-import OxfordShirt2 from '../../assets/NEW ARRIVALS/HERO/OxfordShirtMen2.webp';
-import OxfordShirt3 from '../../assets/NEW ARRIVALS/HERO/OxfordShirtMen3.webp';
-import PerformanceAnkle from '../../assets/NEW ARRIVALS/HERO/PerformanceAnkles.webp';
-import PrintTee from '../../assets/NEW ARRIVALS/HERO/PrintTee.webp';
-import StripePolo from '../../assets/NEW ARRIVALS/HERO/StripePolo.jpeg';
-import StripePoloMen from '../../assets/NEW ARRIVALS/HERO/StripePoloMen.webp';
-import WrinkleShirt from '../../assets/NEW ARRIVALS/HERO/WrinleFreeShirtMen.webp';
+import BadgeCap from '../../assets/NEW-ARRIVALS/HERO/BadgeCap.webp';
+import ClassicCap from '../../assets/NEW-ARRIVALS/HERO/ClassicCap.webp';
+import ClassicJogger from '../../assets/NEW-ARRIVALS/HERO/ClassicJogger.webp';
+import ClassicPolo1 from '../../assets/NEW-ARRIVALS/HERO/ClassicPolo1.webp';
+import CouragePolo from '../../assets/NEW-ARRIVALS/HERO/CouragePolo.webp';
+import CouragePoloMen from '../../assets/NEW-ARRIVALS/HERO/CouragePoloMen.webp';
+import InfinitePolo from '../../assets/NEW-ARRIVALS/HERO/InfinitePolo.jpeg';
+import InfinitePoloMen from '../../assets/NEW-ARRIVALS/HERO/InfinitePoloMen.webp';
+import JoggerPant from '../../assets/NEW-ARRIVALS/HERO/JoggerPant.webp';
+import LogoPolo from '../../assets/NEW-ARRIVALS/HERO/LogoPolo.webp';
+import MensDenim from '../../assets/NEW-ARRIVALS/HERO/MensDenim.jpeg';
+import OxfordShirt from '../../assets/NEW-ARRIVALS/HERO/OxfordShirtMen.webp';
+import OxfordShirt2 from '../../assets/NEW-ARRIVALS/HERO/OxfordShirtMen2.webp';
+import OxfordShirt3 from '../../assets/NEW-ARRIVALS/HERO/OxfordShirtMen3.webp';
+import PerformanceAnkle from '../../assets/NEW-ARRIVALS/HERO/PerformanceAnkles.webp';
+import PrintTee from '../../assets/NEW-ARRIVALS/HERO/PrintTee.webp';
+import StripePolo from '../../assets/NEW-ARRIVALS/HERO/StripePolo.jpeg';
+import StripePoloMen from '../../assets/NEW-ARRIVALS/HERO/StripePoloMen.webp';
+import WrinkleShirt from '../../assets/NEW-ARRIVALS/HERO/WrinleFreeShirtMen.webp';
 
 const ArrivalHero = () => {
   const [currentPage, setCurrentPage] = useState(1);

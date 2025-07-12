@@ -1,10 +1,10 @@
-import Banner1 from '../../assets/BANNER IMG/Banner.jpeg'
-import Banner2 from '../../assets/BANNER IMG/Banner-2.jpeg'
-import Banner3 from '../../assets/BANNER IMG/Banner-3.jpeg'
+import Banner1 from '../../assets/BANNER-IMG/Banner.jpeg'
+import Banner2 from '../../assets/BANNER-IMG/Banner-2.jpeg'
+import Banner3 from '../../assets/BANNER-IMG/Banner-3.jpeg'
 
-import Phone1 from '../../assets/BANNER IMG/phone-1.jpeg'
-import Phone2 from '../../assets/BANNER IMG/phone-2.jpeg'
-import Phone3 from '../../assets/BANNER IMG/phone-3.jpeg'
+import Phone1 from '../../assets/BANNER-IMG/phone-1.jpeg'
+import Phone2 from '../../assets/BANNER-IMG/phone-2.jpeg'
+import Phone3 from '../../assets/BANNER-IMG/phone-3.jpeg'
 
 import Hero from '../HERO/Hero'
 import Category from '../CATEGORY/Category'

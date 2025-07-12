@@ -1,16 +1,16 @@
 import React from 'react';
 import ProductCard from '../../components/PRODUCTS/Card'; // your custom card
 
-import Knitwear1 from '../../assets/WINTER COLLECTION/Knitwear1.webp';
-import Knitwear2 from '../../assets/WINTER COLLECTION/Knitwear2.webp'
-import Knitwear3 from '../../assets/WINTER COLLECTION/Knitwear3.webp'
-import Knitwear4 from '../../assets/WINTER COLLECTION/Knitwear4.webp'
-import Knitwear5 from '../../assets/WINTER COLLECTION/Knitwear5.webp'
-import Knitwear6 from '../../assets/WINTER COLLECTION/Knitwear6.webp'
-import SleevlessJacket1 from '../../assets/WINTER COLLECTION/SleevlessJacket1.webp'
-import SleevlessJacket2 from '../../assets/WINTER COLLECTION/SleevlessJacket2.webp'
-import SleeveJacket1 from '../../assets/WINTER COLLECTION/SleeveJacket1.webp'
-import Hoodie from '../../assets/WINTER COLLECTION/Hoodie1.webp'
+import Knitwear1 from '../../assets/WINTER-COLLECTION/Knitwear1.webp';
+import Knitwear2 from '../../assets/WINTER-COLLECTION/Knitwear2.webp'
+import Knitwear3 from '../../assets/WINTER-COLLECTION/Knitwear3.webp'
+import Knitwear4 from '../../assets/WINTER-COLLECTION/Knitwear4.webp'
+import Knitwear5 from '../../assets/WINTER-COLLECTION/Knitwear5.webp'
+import Knitwear6 from '../../assets/WINTER-COLLECTION/knitwear6.webp'
+import SleevlessJacket1 from '../../assets/WINTER-COLLECTION/SleevlessJacket1.webp'
+import SleevlessJacket2 from '../../assets/WINTER-COLLECTION/SleevlessJacket2.webp'
+import SleeveJacket1 from '../../assets/WINTER-COLLECTION/SleeveJacket1.webp'
+import Hoodie from '../../assets/WINTER-COLLECTION/Hoodie1.webp'
 
 import './WinterHero.css'; // (you'll create this for grid layout)
 

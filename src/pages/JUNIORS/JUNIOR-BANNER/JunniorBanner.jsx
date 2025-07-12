@@ -1,6 +1,6 @@
 import React from 'react'
 import './JunniorBanner.css'
-import JuniorBanner from '../../../assets/JUNIOR IMG/BANNER/BannerJunior.webp'
+import JuniorBanner from '../../../assets/JUNIOR-IMG/BANNER/BannerJunior.webp'
 
 import JuniorHero from '../JUNIOR-HERO/JuniorHero'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Arrival.css'
-import ArrivalBanner from '../../assets/NEW ARRIVALS/BANNER/BANNER.webp'
+import ArrivalBanner from '../../assets/NEW-ARRIVALS/BANNER/BANNER.webp'
 
 import ArrivalHero from './ArrivalHero'
 const Arrival = () => {

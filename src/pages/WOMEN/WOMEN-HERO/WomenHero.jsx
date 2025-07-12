@@ -2,15 +2,15 @@ import React from 'react'
 import CardSwiper from '../../../components/PRODUCTS/CardSwiper'
 
 
-import PoloWomen1 from '../../../assets/WOMEN IMG/POLO/PoloWomen1.webp'
-import PoloWomen2 from '../../../assets/WOMEN IMG/POLO/PoloWomen2.webp'
-import PoloWomen3 from '../../../assets/WOMEN IMG/POLO/PoloWomen3.webp'
+import PoloWomen1 from '../../../assets/WOMEN-IMG/POLO/PoloWomen1.webp'
+import PoloWomen2 from '../../../assets/WOMEN-IMG/POLO/PoloWomen2.webp'
+import PoloWomen3 from '../../../assets/WOMEN-IMG/POLO/PoloWomen3.webp'
 
-import BottomWomen1 from '../../../assets/WOMEN IMG/BOTTOM/BottomWomen1.webp'
-import BottomWomen2 from '../../../assets/WOMEN IMG/BOTTOM/WomenBottom2.webp'
-import BottomWomen3 from '../../../assets/WOMEN IMG/BOTTOM/WomenBottom3.webp'
+import BottomWomen1 from '../../../assets/WOMEN-IMG/BOTTOM/BottomWomen1.webp'
+import BottomWomen2 from '../../../assets/WOMEN-IMG/BOTTOM/WomenBottom2.webp'
+import BottomWomen3 from '../../../assets/WOMEN-IMG/BOTTOM/WomenBottom3.webp'
 
-import ShirtWomen1 from '../../../assets/WOMEN IMG/SHIRTS/ShirtWomen1.webp'
+import ShirtWomen1 from '../../../assets/WOMEN-IMG/SHIRTS/ShirtWomen1.webp'
 
 const WomenHero = () => {
 

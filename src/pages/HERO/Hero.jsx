@@ -2,27 +2,27 @@
 import CardSwiper from '../../components/PRODUCTS/CardSwiper'
 
 // Men
-import InfinitePolo from '../../assets/HERO IMG/InfinitePolo.jpeg'
-import MensDenim from '../../assets/HERO IMG/MensDenim.jpeg'
-import StripePolo from '../../assets/HERO IMG/StripePolo.jpeg'
-import CouragePolo from '../../assets/HERO IMG/CouragePolo.webp'
-import Ankle from '../../assets/HERO IMG/PerformanceAnkles.webp'
-import PrintTee from '../../assets/HERO IMG/PrintTee.webp'
-import BadgeCap from '../../assets/HERO IMG/BadgeCap.webp'
-import JoggerPant from '../../assets/HERO IMG/JoggerPant.webp'
-import LogoPolo from '../../assets/HERO IMG/LogoPolo.webp'
+import InfinitePolo from '../../assets/HERO-IMG/InfinitePolo.jpeg'
+import MensDenim from '../../assets/HERO-IMG/MensDenim.jpeg'
+import StripePolo from '../../assets/HERO-IMG/StripePolo.jpeg'
+import CouragePolo from '../../assets/HERO-IMG/CouragePolo.webp'
+import Ankle from '../../assets/HERO-IMG/PerformanceAnkles.webp'
+import PrintTee from '../../assets/HERO-IMG/PrintTee.webp'
+import BadgeCap from '../../assets/HERO-IMG/BadgeCap.webp'
+import JoggerPant from '../../assets/HERO-IMG/JoggerPant.webp'
+import LogoPolo from '../../assets/HERO-IMG/LogoPolo.webp'
 
 //Women
-import NapoloenPolo from '../../assets/HERO IMG/Women/NapoloenPolo.webp'
-import CottonPant from '../../assets/HERO IMG/Women/CottonPants.webp'
-import OxfordShirt from '../../assets/HERO IMG/Women/OxfordShirt.webp'
-import DenimJeans from '../../assets/HERO IMG/Women/DenimJeans.webp'
-import LionPolo from '../../assets/HERO IMG/Women/LionPolo.webp'
-import StretchJeans from '../../assets/HERO IMG/Women/StretchJeans.webp' 
+import NapoloenPolo from '../../assets/HERO-IMG/Women/NapoloenPolo.webp'
+import CottonPant from '../../assets/HERO-IMG/Women/CottonPants.webp'
+import OxfordShirt from '../../assets/HERO-IMG/Women/OxfordShirt.webp'
+import DenimJeans from '../../assets/HERO-IMG/Women/DenimJeans.webp'
+import LionPolo from '../../assets/HERO-IMG/Women/LionPolo.webp'
+import StretchJeans from '../../assets/HERO-IMG/Women/StretchJeans.webp' 
 
 //Junior
-import Shorts from '../../assets/HERO IMG/Juniors/Shorts.webp'
-import ExplorationPolo from '../../assets/HERO IMG/Juniors/ExplorationPolo.webp'
+import Shorts from '../../assets/HERO-IMG/Juniors/Shorts.webp'
+import ExplorationPolo from '../../assets/HERO-IMG/Juniors/ExplorationPolo.webp'
 
 import "swiper/css";
 import "swiper/css/navigation";

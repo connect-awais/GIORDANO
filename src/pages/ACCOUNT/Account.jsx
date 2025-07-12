@@ -1,6 +1,6 @@
 import React from 'react'
 import './Account.css'
-import Logo from '../../assets/HEADER IMG/logo.svg'
+import Logo from '../../assets/HEADER-IMG/logo.svg'
 import { Link } from 'react-router-dom'
 
 const Account = () => {
