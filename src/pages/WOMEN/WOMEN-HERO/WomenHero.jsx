@@ -16,6 +16,7 @@ const WomenHero = () => {
 
   const poloProducts = [
     {
+      id: "50",
           image: PoloWomen1,
           title: 'Women 3D Lion Polo',
           price: 8999,
@@ -24,6 +25,7 @@ const WomenHero = () => {
           isNew: true,
         },
         {
+          id: "51",
           image: PoloWomen2,
           title: 'Women Napoloen Polo',
           price: 8999,
@@ -32,6 +34,7 @@ const WomenHero = () => {
           isNew: true,
         },
         {
+          id: "52",
           image: PoloWomen3,
           title: 'Women AntiMicrobial Polo',
           price: 8999,
@@ -43,6 +46,7 @@ const WomenHero = () => {
 
   const bottomProducts = [
     {
+      id: "53",
           image: BottomWomen1,
           title: 'Women Linen Cotton Pants',
           price: 8999,
@@ -51,6 +55,7 @@ const WomenHero = () => {
           isNew: true,
         },
         {
+          id: "54",
           image: BottomWomen2,
           title: 'Women Stretch Denim Jeans',
           price: 8999,
@@ -59,6 +64,7 @@ const WomenHero = () => {
           isNew: true,
         },
         {
+          id: "55",
           image: BottomWomen3,
           title: 'Women Repreve Denim Jeans',
           price: 8999,
@@ -70,6 +76,7 @@ const WomenHero = () => {
 
   const  shirtsProducts = [
     {
+      id: "56",
           image: ShirtWomen1,
           title: 'Women Performance Oxford Shirt',
           price: 8999,

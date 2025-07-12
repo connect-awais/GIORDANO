@@ -8,8 +8,8 @@ const ProductCard = ({ image, title, price, colors, sizes, isNew, ...rest }) => 
     navigate(`/product/${encodeURIComponent(title)}`, { state: { image, title, price, colors, sizes, isNew, ...rest } });
   };
   return (
-    <div className="product-card" data-aos="fade-up" onClick={handleClick} style={{ cursor: 'pointer' }}>
-      <div className="image-wrapper">
+    <div className="product-card" onClick={handleClick} style={{ cursor: 'pointer' }}>
+      <div className="image-wrapper" >
         {isNew && <span className="badge">NEW ARRIVALS</span>}
         <img src={image} alt={title} />
       </div>

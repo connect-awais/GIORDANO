@@ -17,20 +17,29 @@ import Arrival from './pages/NEW-ARRIVAL/Arrival';
 import Clearence from './pages/CLEARENCE/Clearence';
 import ProductDetail from './pages/PRODUCT-DETAIL/ProductDetail';
 import ScrollToTop from './components/SCROLL-TO-TOP/ScrollToTop';
+import CartNotification from './components/CARTNOTI/CartNotification'
 
 function App() {
 
+  
+
 useEffect(() => {
-  AOS.init({
-    duration: 800,
-    once: true,
-    easing: 'ease-in-out',
-  });
+  // Initialize AOS once
+  AOS.init({ once: true });
+
+  // Refresh AOS after Swiper loads
+  const timeout = setTimeout(() => {
+    AOS.refresh(); // Recalculate animation layout after Swiper is ready
+  }, 1000); // Adjust timing if needed
 
   // Force scroll to top on initial page load
   window.history.scrollRestoration = 'manual';
   window.scrollTo(0, 0);
+
+  // Cleanup the timeout on unmount
+  return () => clearTimeout(timeout);
 }, []);
+
 
 
 
@@ -47,6 +56,7 @@ useEffect(() => {
   <>
     <TopBar />
     <Header />
+    <CartNotification/>
   </>
 )}
 

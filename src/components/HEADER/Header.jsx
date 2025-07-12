@@ -21,6 +21,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showMenDropdown, setShowMenDropdown] = useState(false);
 
+  const handleAdd = () => {
+  if (!product) return; // prevent crash
+  addToCart(product);   // add to cart
+};
+  
+
   return (
     <div>
       {/* === Header Top === */}
@@ -47,7 +53,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="shopping-link" onClick={() => setIsCartOpen(true)}>
-            <a href="#">Cart</a>
+            <p className="add-to-cart-text" onClick={handleAdd}>Cart </p>
             <MdOutlineShoppingCart className="cart-icon" style={{color: 'black'}}/>
           </div>
         </div>

@@ -4,6 +4,10 @@
   margin-bottom: 100px;
 }
 
+.classic-products {
+  flex: 1;
+}
+
 @media (max-width: 768px)
 {
   .classic-layout {

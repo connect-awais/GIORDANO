@@ -217,7 +217,6 @@
   z-index: 1000;
 }
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .desktop-only {
@@ -364,4 +363,10 @@
   .cart-link-header {
     color: black;
   }
+}
+
+.add-to-cart-text {
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.3s ease;
 }

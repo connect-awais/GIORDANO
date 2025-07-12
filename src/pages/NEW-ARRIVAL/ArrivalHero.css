@@ -1,29 +1,59 @@
-/* ArrivalHero.css or global CSS */
-
+.arrival-layout {
+  display: flex;
+  padding: 50px;
+}
 
 .arrival-sidebar {
-  padding: 15px;
+  width: 20%;
 }
 
-.pagination {
+.arrival-hero {
+  width: 80%;
+}
+
+.arrival-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.pagination-buttons {
+  text-align: center;
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
 }
 
-.pagination button {
-  padding: 6px 14px;
-  border: 1px solid #ccc;
-  background: white;
-  font-size: 14px;
+.pagination-buttons button {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #eee;
   cursor: pointer;
-  transition: 0.3s;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
-.pagination button.active,
-.pagination button:hover {
+.pagination-buttons button.active {
   background-color: black;
   color: white;
-  border-color: black;
 }
+
+@media (max-width: 768px) {
+  .arrival-layout {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .arrival-sidebar {
+    width: 100%;
+  }
+
+  .arrival-hero {
+    width: 100%;
+  }
+
+  .arrival-product-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+}
+

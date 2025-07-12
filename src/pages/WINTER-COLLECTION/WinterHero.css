@@ -8,17 +8,15 @@
   margin-bottom: 20px;
 }
 
-.product-grid {
+.winter-product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr); /* <-- fixed 3 columns */
+  gap: 50px;
+  padding: 50px 0;
 }
 
 .layout-winter {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   gap: 20px;
 }
 
@@ -26,7 +24,6 @@
   flex: 0 0 400px;
   padding: 50px;
 }
-
 
 /* Responsive: stack sidebar and product grid on small screens */
 @media (max-width: 768px) {
@@ -43,6 +40,12 @@
   .sidebar-winter {
     flex: 0;
     padding: 15px;
+  }
+
+  .winter-product-grid {
+    grid-template-columns: repeat(1, 1fr); /* 2 columns on small screens */
+    gap: 20px;
+    padding: 5px;
   }
 
 }

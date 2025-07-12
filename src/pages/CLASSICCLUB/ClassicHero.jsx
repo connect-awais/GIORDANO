@@ -12,6 +12,7 @@ const ClassicClub = () => {
 
   const classicProducts = [
     {
+      id: "59",
       image: ClassicPolo,
       title: 'Classics Polo',
       price: 8999,
@@ -20,6 +21,7 @@ const ClassicClub = () => {
       isNew: true,
     },
     {
+      id: "60",
       image: ClassicJogger,
       title: 'Classics Jogger',
       price: 8999,
@@ -27,7 +29,7 @@ const ClassicClub = () => {
       sizes: ['Small', 'Medium', 'Large'],
       isNew: true,
     },
-    {
+    {id: "61",
       image: ClassicCap,
       title: 'Classics Cap',
       price: 8999,
@@ -42,7 +44,7 @@ const ClassicClub = () => {
       <div className="classic-sidebar">
         <Filter />
       </div>
-      <div className="products">
+      <div className="classic-products">
         <CardSwiper products={classicProducts} />
       </div>
     </div>

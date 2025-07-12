@@ -38,6 +38,7 @@ const Men = () => {
 
   const poloProducts = [
     {
+      id: "18",
       image: CouragePoloMen,
       title: 'Courage Polo',
       price: 11999,
@@ -46,6 +47,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "19",
       image: StripePoloMen,
       title: 'Giordano Stripe Polo',
       price: 12499,
@@ -54,6 +56,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "20",
       image: InfinitePoloMen,
       title: 'Giordano Infinite Polo',
       price: 12499,
@@ -62,6 +65,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "21",
       image: NapoloenPoloMen,
       title: 'Giordano Napoloen Polo',
       price: 12499,
@@ -70,6 +74,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "22",
       image: PrintTeeMen,
       title: 'Giordano PrintTee Polo',
       price: 12499,
@@ -82,6 +87,7 @@ const Men = () => {
 
   const shirtProducts = [
     {
+      id: "23",
       image: OxfordShirtMen,
       title: 'Performance Oxford Shirt',
       price: 8999,
@@ -90,6 +96,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "24",
       image: OxfordShirtMen2,
       title: 'Performance Oxford Shirt',
       price: 8999,
@@ -98,6 +105,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "25",
       image: OxfordShirtMen3,
       title: 'Performance Oxford Shirt',
       price: 8999,
@@ -106,6 +114,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "26",
       image: WinklerShirtMen,
       title: 'Wrinkle Free Shirt',
       price: 8999,
@@ -114,6 +123,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "27",
       image: OxfordShirtMen3,
       title: 'Performance Oxford Shirt',
       price: 8999,
@@ -126,6 +136,7 @@ const Men = () => {
 
   const teesProducts = [
     {
+      id: "28",
       image: NeckTeeMen,
       title: 'Cotton Jersey Crew Neck Slim Fit Tee',
       price: 8999,
@@ -134,6 +145,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "29",
       image: PrintTeeMen,
       title: 'Giordano Print Tee',
       price: 8999,
@@ -142,6 +154,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "30",
       image: HenlyTeeMen,
       title: 'Henley Performance Tee',
       price: 8999,
@@ -150,6 +163,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "31",
       image: LongSleeveTeeMen,
       title: 'Crewneck Long Sleeve Interlock Tees',
       price: 8999,
@@ -161,6 +175,7 @@ const Men = () => {
 
   const innokhakiProducts= [
     {
+      id: "32",
       image: InnoKhakiSkinnymen,
       title: 'Crewneck Long Sleeve Interlock Tees',
       price: 8999,
@@ -169,6 +184,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "33",
       image: InnoKhakiBluemen,
       title: 'Crewneck Long Sleeve Interlock Tees',
       price: 8999,
@@ -180,6 +196,7 @@ const Men = () => {
 
   const joggersProducts = [
     {
+      id: "34",
       image: JoggerMen1,
       title: 'Cool Touch Interlock Jogger',
       price: 8999,
@@ -188,6 +205,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "35",
       image: JoggerMen2,
       title: 'G-Motion Plain Weave Jogger',
       price: 8999,
@@ -196,6 +214,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "36",
       image: JoggerMen3,
       title: 'Twill Jogger Khaki',
       price: 8999,
@@ -204,6 +223,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "37",
       image: JoggerMen4,
       title: 'G-Motion Elastic Waist Jogger Pant',
       price: 8999,
@@ -212,6 +232,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "38",
       image: JoggerMen3,
       title: 'Twill Jogger Khaki',
       price: 8999,
@@ -223,6 +244,7 @@ const Men = () => {
 
   const shortsProducts = [
     {
+      id: "39",
       image: ShortMen1,
       title: 'Embroidered Logo Supremacy Short',
       price: 8999,
@@ -231,6 +253,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "40",
       image: ShortMen2,
       title: 'Cotton Slim Hidden Comfort Bermuda Short',
       price: 8999,
@@ -239,6 +262,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "41",
       image: ShortMen3,
       title: 'Solid Drawstring Short',
       price: 8999,
@@ -247,6 +271,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "42",
       image: ShortMen4,
       title: 'Supremacy Serona Short',
       price: 8999,
@@ -255,6 +280,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "43",
       image: ShortMen3,
       title: 'Solid Drawstring Short',
       price: 8999,
@@ -266,6 +292,7 @@ const Men = () => {
 
   const essentialsProducts = [
     {
+      id: "44",
       image: CapMen1,
       title: 'Giordano Courage Cap',
       price: 8999,
@@ -274,6 +301,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "45",
       image: AnkleMen1,
       title: 'Performance Ankle Socks',
       price: 8999,
@@ -282,6 +310,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "46",
       image: CapMen2,
       title: 'Round Rubber Badge Cap',
       price: 8999,
@@ -290,6 +319,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "47",
       image: ModalMen1,
       title: 'High Modal Trunks (Pack of 3)',
       price: 8999,
@@ -298,6 +328,7 @@ const Men = () => {
       isNew: true,
     },
     {
+      id: "48",
       image: AnkleMen1,
       title: 'Performance Ankle Socks',
       price: 8999,

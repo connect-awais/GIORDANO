@@ -39,6 +39,7 @@ const MainComponent = () => {
       image: InfinitePolo,
     },
     {
+      id: "2",
       title: "Men's Denim Jeans",
       price: 14999,
       sizes: [30, 32, 34, 36, 38],
@@ -46,6 +47,7 @@ const MainComponent = () => {
       image: MensDenim,
     },
     {
+      id: "3",
       title: "Giordano Stripe Polo",
       price: 12499,
       sizes: ["Small", "Medium", "Large", "XL", "XXL"],
@@ -53,6 +55,7 @@ const MainComponent = () => {
       image: StripePolo,
     },
     {
+      id: "4",
       title: "Courage Polo",
       price: 12499,
       sizes: ["Small", "Medium", "Large", "XL", "XXL"],
@@ -60,6 +63,7 @@ const MainComponent = () => {
       image: CouragePolo,
     },
     {
+      id: "5",
       title: "Performance Ankle Socks",
       price: 12499,
       sizes: ["Small", "Medium", "Large", "XL", "XXL"],
@@ -67,6 +71,7 @@ const MainComponent = () => {
       image: Ankle,
     },
     {
+      id: "6",
       title: "Giordano Print Tee",
       price: 12499,
       sizes: ["Small", "Medium", "Large", "XL", "XXL"],
@@ -74,6 +79,7 @@ const MainComponent = () => {
       image: PrintTee,
     },
     {
+      id: "7",
       title: "Round Rubber Badge Cap",
       price: 12499,
       sizes: ["Small", "Medium", "Large", "XL", "XXL"],
@@ -81,6 +87,7 @@ const MainComponent = () => {
       image: BadgeCap,
     },
     {
+      id: "8",
       title: "Air Double Knit Jogger Pants",
       price: 12499,
       sizes: ["Small", "Medium", "Large", "XL", "XXL"],
@@ -88,6 +95,7 @@ const MainComponent = () => {
       image: JoggerPant,
     },
     {
+      id: "9",
       title: "Napoloen Logo Polo",
       price: 12499,
       sizes: ["Small", "Medium", "Large", "XL", "XXL"],
@@ -97,7 +105,7 @@ const MainComponent = () => {
   ]
   const womenProducts = [
     {
-      id: "1",
+      id: "10",
       title: "Women AntiMicrobial Small Napoleon Polo",
       price: 10999,
       sizes: ["Small", "Medium", "Large", "XL"],
@@ -105,6 +113,7 @@ const MainComponent = () => {
       image: NapoloenPolo,
     },
     {
+      id: "11",
       title: "Women Linen Cotton Pants",
       price: 10999,
       sizes: ["Small", "Medium", "Large", "XL"],
@@ -112,6 +121,7 @@ const MainComponent = () => {
       image: CottonPant,
     },
     {
+      id: "12",
       title: "Women Performance Oxford Shirt",
       price: 10999,
       sizes: ["Small", "Medium", "Large", "XL"],
@@ -119,6 +129,7 @@ const MainComponent = () => {
       image: OxfordShirt,
     },
     {
+      id: "13",
       title: "Women Repreve Denim Jeans",
       price: 10999,
       sizes: ["Small", "Medium", "Large", "XL"],
@@ -126,6 +137,7 @@ const MainComponent = () => {
       image: DenimJeans,
     },
     {
+      id: "14",
       title: "Women 3D Lion Polo",
       price: 10999,
       sizes: ["Small", "Medium", "Large", "XL"],
@@ -133,6 +145,7 @@ const MainComponent = () => {
       image: LionPolo,
     },
     {
+      id: "15",
       title: "Women stretch Denim Jeans",
       price: 10999,
       sizes: ["Small", "Medium", "Large", "XL"],
@@ -142,6 +155,7 @@ const MainComponent = () => {
   ]
   const juniorProducts = [
     {
+      id: "16",
       title: "Junior Supremacy Short",
       price: 6999,
       sizes: ["100", "110", "130", "140", "155"],
@@ -149,6 +163,7 @@ const MainComponent = () => {
       image: Shorts,
     },
     {
+      id: "17",
       title: "Junior EXploration Polo",
       price: 8499,
       sizes: ["100", "110", "130", "140", "155", "165"],

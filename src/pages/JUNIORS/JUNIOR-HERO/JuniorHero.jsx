@@ -12,6 +12,7 @@ const JuniorHero = () => {
 
   const juniorProducts = [
     {
+      id: "57",
       image: JuniorPolo1,
       title: 'Junior Exploration Polo',
       price: 8999,
@@ -20,6 +21,7 @@ const JuniorHero = () => {
       isNew: true,
     },
     {
+      id: "58",
       image: JuniorShorts1,
       title: 'Junior Supremacy Short',
       price: 8999,

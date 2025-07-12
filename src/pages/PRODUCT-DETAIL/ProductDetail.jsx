@@ -1,48 +1,104 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import './ProductDetail.css';
+import { useCart } from '../../context/CartContext';
+
+import SizeChart from '../../assets/CHART/polosizechart.webp'
+
+
 
 const ProductDetail = () => {
-
   const location = useLocation();
   const navigate = useNavigate();
   const product = location.state;
 
+  const [selectedSize, setSelectedSize] = useState(product?.sizes?.[0] || 'Small');
+  const [selectedColor, setSelectedColor] = useState(product.colors?.[0] || '#000');
+  const [quantity, setQuantity] = useState(1);
+
+  const { addToCart } = useCart();
+
+  useEffect(() => {
+  window.scrollTo({ top: 0, behavior: 'instant' }); // prevents scroll flash
+}, []);
+
   if (!product) {
-    return <div>Product not found. <button onClick={() => navigate(-1)}>Go Back</button></div>;
+    return (
+      <div style={{ padding: '32px' }}>
+        Product not found. <button onClick={() => navigate(-1)}>Go Back</button>
+      </div>
+    );
   }
 
-  
-
-
   return (
-    <div style={{ padding: 32 }}>
-      <button onClick={() => navigate(-1)} style={{ marginBottom: 16 }}>Back</button>
-      <div style={{ display: 'flex', gap: 32 }}>
-        <img src={product.image} alt={product.title} style={{ width: 300, height: 300, objectFit: 'contain' }} />
-        <div>
-          {product.isNew && <span style={{ color: 'red', fontWeight: 'bold' }}>NEW ARRIVALS</span>}
-          <h2>{product.title}</h2>
-          <p style={{ fontSize: 24 }}>Rs.{product.price.toLocaleString()}.00</p>
-          <div>
-            <strong>Colors:</strong>
-            <div style={{ display: 'flex', gap: 8, margin: '8px 0' }}>
-              {product.colors.map((color, idx) => (
-                <span key={idx} style={{ display: 'inline-block', width: 24, height: 24, borderRadius: '50%', background: color, border: '1px solid #ccc' }}></span>
-              ))}
-            </div>
-          </div>
-          <div>
-            <strong>Sizes:</strong>
-            <div style={{ display: 'flex', gap: 8, margin: '8px 0' }}>
-              {product.sizes.map((size, idx) => (
-                <span key={idx} style={{ padding: '4px 12px', border: '1px solid #ccc', borderRadius: 4 }}>{size}</span>
-              ))}
-            </div>
-          </div>
+    <div>
+    <div className="product-detail-container">
+      <div className="left-section">
+        <img
+          src={product.image}
+          alt={product.title}
+          className="main-product-image"
+          loading="eager"
+        />
+        <div className="carousel-arrow left">&#8249;</div>
+        <div className="carousel-arrow right">&#8250;</div>
+      </div>
+
+      <div className="right-section">
+        
+
+        <h1 className="product-title">{product.title}</h1>
+        <p className="product-price">Rs.{product.price.toLocaleString()}.00</p>
+
+        <p className="product-label">Size: <span>{selectedSize}</span></p>
+        <div className="size-options">
+          {(product.sizes || ['Small', 'Medium', 'Large', 'XL', 'XXL']).map(size => (
+            <button
+              key={size}
+              className={`size-btn ${selectedSize === size ? 'selected' : ''}`}
+              onClick={() => setSelectedSize(size)}
+            >
+              {size}
+            </button>
+          ))}
         </div>
+
+        <p className="product-label">Color:</p>
+<div className="color-options">
+  {product.colors?.map((color, index) => (
+    <div
+      key={index}
+      className={`color-circle ${selectedColor === color ? 'selected' : ''}`}
+      style={{ backgroundColor: color }}
+      onClick={() => setSelectedColor(color)}
+    />
+  ))}
+</div>
+
+<div className="quantity-product">
+        <p className="product-label">Quantity</p>
+        <div className="quantity-selector">
+          <button onClick={() => setQuantity(Math.max(1, quantity - 1))}>-</button>
+          <input type="text" value={quantity} readOnly />
+          <button onClick={() => setQuantity(quantity + 1)}>+</button>
+        </div>
+        </div>
+
+        <div className="stock-warning">
+          <span className="dot"></span> Only {product.stock || 2} left!
+        </div>
+
+        <button className="add-to-cart-btn" onClick={() => addToCart(product)}>Add to cart</button>
+        <button className="buy-now-btn">Buy it now</button>
+      </div>
+      </div>
+
+      <div className="chart">
+      <img src={SizeChart} />
       </div>
     </div>
   );
 };
 
-export default ProductDetail; 
+export default ProductDetail;

@@ -8,12 +8,12 @@ import './CardSwiper.css';
 
 const ProductSwiper = ({ title, products }) => {
   return (
-    <section className="product-section" data-aos="fade-up">
-      <h2 className="section-title">{title}</h2>
+    <section className="product-section" >
+      <h2 className="section-title" >{title}</h2>
 
 <Swiper
   spaceBetween={20}
-  loop={products.length >= 8}
+  loop={false}
   speed={600}
   navigation={true}
   breakpoints={{
@@ -33,7 +33,7 @@ const ProductSwiper = ({ title, products }) => {
   modules={[Navigation]}
 >
   {products.map((product, index) => (
-    <SwiperSlide key={index} className='products-swiper'>
+    <SwiperSlide key={product.id || index} className='products-swiper'>
       <Card {...product} />
     </SwiperSlide>
   ))}

@@ -1,41 +1,59 @@
-/* ArrivalHero.css or global CSS */
-.clearence-sidebar {
-  padding: 15px;
-}
-
-.pagination {
-  margin-top: 30px;
+.clearence-layout {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.pagination button {
-  padding: 6px 14px;
-  border: 1px solid #ccc;
-  background: white;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.pagination button.active,
-.pagination button:hover {
-  background-color: black;
-  color: white;
-  border-color: black;
-}
-
-.layout-clearence {
-  display: flex;
-  align-items: flex-start;
-}
-
-.sidebar-clearence {
-  flex: 0 0 400px;
   padding: 50px;
 }
 
-.products {
-  flex: 1;
+.clearence-sidebar {
+  width: 20%;
 }
+
+.clearence-hero {
+  width: 80%;
+}
+
+.clearence-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.pagination-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pagination-buttons button {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.pagination-buttons button.active {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .clearence-layout {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .clearence-sidebar {
+    width: 100%;
+  }
+
+  .clearence-hero {
+    width: 100%;
+  }
+
+  .clearence-product-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+}
+

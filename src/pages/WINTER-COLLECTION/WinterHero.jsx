@@ -19,6 +19,7 @@ import Filter from '../../components/FILTERS/Filter'
 const WinterCollection = () => {
   const winterProducts = [
     {
+      id: "62",
       image: Knitwear1,
       title: 'Cable Knit Crewneck Pull Over',
       price: 8999,
@@ -27,6 +28,7 @@ const WinterCollection = () => {
       isNew: true,
     },
     {
+      id: "63",
       image: Knitwear2,
       title: 'Solid Crewneck Knitwear Pull Over',
       price: 8999,
@@ -35,6 +37,7 @@ const WinterCollection = () => {
       isNew: true,
     },
     {
+      id: "64",
       image: SleevlessJacket1,
       title: 'Solid Crewneck Knitwear Pull Over',
       price: 8999,
@@ -43,6 +46,7 @@ const WinterCollection = () => {
       isNew: true,
     },
     {
+      id: "65",
       image: SleeveJacket1,
       title: 'Solid Crewneck Knitwear Pull Over',
       price: 8999,
@@ -51,6 +55,7 @@ const WinterCollection = () => {
       isNew: true,
     },
     {
+      id: "66",
       image: Knitwear4,
       title: 'Solid Crewneck Knitwear Pull Over',
       price: 8999,
@@ -59,6 +64,7 @@ const WinterCollection = () => {
       isNew: true,
     },
     {
+      id: "67",
       image: SleevlessJacket2,
       title: 'Solid Crewneck Knitwear Pull Over',
       price: 8999,
@@ -67,6 +73,7 @@ const WinterCollection = () => {
       isNew: true,
     },
     {
+      id: "68",
       image: Knitwear5,
       title: 'Solid Crewneck Knitwear Pull Over',
       price: 8999,
@@ -75,6 +82,7 @@ const WinterCollection = () => {
       isNew: true,
     },
     {
+      id: "69",
       image: Knitwear6,
       title: 'Solid Crewneck Knitwear Pull Over',
       price: 8999,
@@ -83,6 +91,7 @@ const WinterCollection = () => {
       isNew: true,
     },
     {
+      id: "70",
       image: Hoodie,
       title: 'Solid Crewneck Knitwear Pull Over',
       price: 8999,
@@ -100,7 +109,7 @@ const WinterCollection = () => {
         <Filter />
       </div>
     <div className="winter-hero products">
-      <div className="product-grid">
+      <div className="winter-product-grid">
         {winterProducts.map((product, index) => (
           <ProductCard key={index} {...product} />
         ))}

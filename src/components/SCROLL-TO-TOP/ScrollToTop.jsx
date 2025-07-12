@@ -5,15 +5,15 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Force scroll to top AFTER render + AOS/layout shifts
-    const timeout = setTimeout(() => {
-      // Scroll both window and html/body (to be safe)
-      window.scrollTo(0, 0);
-      document.documentElement.scrollTop = 0;
-      document.body.scrollTop = 0;
-    }, 100); // Delay allows layout to render
+    // 1. Instantly scroll to top *before* anything shows to avoid layout jump
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 
-    return () => clearTimeout(timeout);
+    // 2. Optional: simulate a smooth final scroll (if needed)
+    // setTimeout(() => {
+    //   window.scrollTo({ top: 0, behavior: 'smooth' });
+    // }, 0);
   }, [pathname]);
 
   return null;
