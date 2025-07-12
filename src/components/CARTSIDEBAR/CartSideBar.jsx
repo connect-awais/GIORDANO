@@ -1,4 +1,4 @@
-import './CartSidebar.css';
+import './CartSideBar.css';
 import { MdClose } from "react-icons/md";
 import { useCart } from '../../context/CartContext';
 import { AiOutlineClose } from 'react-icons/ai'; // cross for items
