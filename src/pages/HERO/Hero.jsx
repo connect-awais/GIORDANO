@@ -174,9 +174,9 @@ const MainComponent = () => {
 
   return (
     <div>
-      <CardSwiper products={menProducts} />
-      <CardSwiper products={womenProducts} />
-      <CardSwiper products={juniorProducts} />
+      <CardSwiper title="MEN"  products={menProducts} linkTo="Men" />
+      <CardSwiper title="WOMEN"  products={womenProducts} linkTo="Women"/>
+      <CardSwiper title="JUNIORS" products={juniorProducts} linkTo="Juniors"/>
     </div>
   );
 };

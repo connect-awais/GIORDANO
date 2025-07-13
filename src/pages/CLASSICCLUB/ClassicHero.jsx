@@ -45,7 +45,7 @@ const ClassicClub = () => {
         <Filter />
       </div>
       <div className="classic-products">
-        <CardSwiper products={classicProducts} />
+        <CardSwiper products={classicProducts} showViewAll={false}/>
       </div>
     </div>
   )

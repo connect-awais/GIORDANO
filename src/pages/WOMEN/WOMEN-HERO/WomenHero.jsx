@@ -87,9 +87,9 @@ const WomenHero = () => {
   ]
   return (
     <div>
-      <CardSwiper title="POLO" products={poloProducts} />
-      <CardSwiper title="BOTTOMS" products={bottomProducts} />
-      <CardSwiper title="SHIRTS" products={shirtsProducts} />
+      <CardSwiper title="POLO" products={poloProducts} showViewAll={false}/>
+      <CardSwiper title="BOTTOMS" products={bottomProducts} showViewAll={false}/>
+      <CardSwiper title="SHIRTS" products={shirtsProducts} showViewAll={false}/>
     </div>
   )
 }

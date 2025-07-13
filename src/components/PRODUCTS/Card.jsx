@@ -11,7 +11,7 @@ const ProductCard = ({ image, title, price, colors, sizes, isNew, ...rest }) => 
     <div className="product-card" onClick={handleClick} style={{ cursor: 'pointer' }}>
       <div className="image-wrapper" >
         {isNew && <span className="badge">NEW ARRIVALS</span>}
-        <img src={image} alt={title} />
+        <img src={image} alt={title} loading="lazy" />
       </div>
       <h4 className="title">{title}</h4>
       <p className="price">Rs.{price.toLocaleString()}.00</p>

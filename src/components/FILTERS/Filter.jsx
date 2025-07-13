@@ -127,7 +127,7 @@ const Filter = () => {
         FILTER
       </button>
       {showDropdown && (
-        <div className="mobile-dropdown">
+        <div className="mobile-dropdown-filter">
           {renderFilters()}
         </div>
       )}

@@ -340,13 +340,13 @@ const Men = () => {
 
   return (
     <div>
-      <CardSwiper title="POLO" products={poloProducts} />
-      <CardSwiper title="SHIRTS" products={shirtProducts} />
-      <CardSwiper title="TEES" products={teesProducts} />
-      <CardSwiper title="INNO-KHAKIS" products={innokhakiProducts} />
-      <CardSwiper title="JOGGERS" products={joggersProducts} />
-      <CardSwiper title="SHORTS" products={shortsProducts} />
-      <CardSwiper title="ESSENTIALS" products={essentialsProducts} />
+      <CardSwiper title="POLO" products={poloProducts} showViewAll={false}/>
+      <CardSwiper title="SHIRTS" products={shirtProducts} showViewAll={false}/>
+      <CardSwiper title="TEES" products={teesProducts} showViewAll={false}/>
+      <CardSwiper title="INNO-KHAKIS" products={innokhakiProducts} showViewAll={false}/>
+      <CardSwiper title="JOGGERS" products={joggersProducts} showViewAll={false}/>
+      <CardSwiper title="SHORTS" products={shortsProducts} showViewAll={false}/>
+      <CardSwiper title="ESSENTIALS" products={essentialsProducts} showViewAll={false}/>
       {/* More sections */}
     </div>
   );

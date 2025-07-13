@@ -27,6 +27,10 @@ import './Banner.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import './Banner.css'
 
+import {EffectFade } from 'swiper/modules';
+import 'swiper/css/effect-fade';
+
+
 const Banner = () => {
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -59,25 +63,31 @@ useEffect(() => {
     return (
            <>
   <Swiper
-    spaceBetween={30}
-    centeredSlides={true}
-    autoplay={{
-      delay: 2500,
-      disableOnInteraction: false,
-    }}
-    pagination={{
-      clickable: true,
-    }}
-    navigation={true}
-    modules={[Autoplay, Pagination, Navigation]}
-    className="mySwiper"
-  >
-    {slides.map((slide, index) => (
-      <SwiperSlide key={index} className='banner-swiper'>
-        <img src={isMobile ? slide.mobile : slide.desktop} alt={`Slide ${index + 1}`} />
-      </SwiperSlide>
-    ))}
-  </Swiper>
+  spaceBetween={30}
+  centeredSlides={true}
+  loop={true} // 🔁 Enable looping
+  autoplay={{
+    delay: 1800,
+    disableOnInteraction: false,
+  }}
+  pagination={{
+    clickable: true,
+  }}
+  navigation={true}
+  effect="fade" // Optional: adds fade effect for banners
+  modules={[Autoplay, Pagination, Navigation, EffectFade]}
+  className="banner-swiper" // Unique class for targeting
+>
+  {slides.map((slide, index) => (
+    <SwiperSlide key={index}>
+      <img
+        src={isMobile ? slide.mobile : slide.desktop}
+        alt={`Slide ${index + 1}`}
+        style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+      />
+    </SwiperSlide>
+  ))}
+</Swiper>
 
   <Hero />
   <Category/>

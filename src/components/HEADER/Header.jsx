@@ -22,17 +22,17 @@ const Header = () => {
   const [showMenDropdown, setShowMenDropdown] = useState(false);
 
   const handleAdd = () => {
-  if (!product) return; // prevent crash
-  addToCart(product);   // add to cart
-};
-  
+    if (!product) return; // prevent crash
+    addToCart(product);   // add to cart
+  };
+
 
   return (
     <div>
       {/* === Header Top === */}
       <div className="header-content">
         <div className="hamburger-icon" onClick={() => setIsMenuOpen(true)}>
-          <FiMenu size={24} style={{color: 'black'}}/>
+          <FiMenu size={24} style={{ color: 'black' }} />
         </div>
 
         <div className="search-bar desktop-only">
@@ -42,19 +42,19 @@ const Header = () => {
 
         <div className="logo">
           <Link to="/">
-          <img src={Logo} />
+            <img src={Logo} />
           </Link>
         </div>
 
         <div className="shopping-cart-links ">
           <div className="shopping-link desktop-only">
             <Link to="/SignIn" className='account-link'>Account
-            <MdPersonOutline style={{color: 'black'}} />
+              <MdPersonOutline />
             </Link>
           </div>
           <div className="shopping-link" onClick={() => setIsCartOpen(true)}>
             <p className="add-to-cart-text" onClick={handleAdd}>Cart </p>
-            <MdOutlineShoppingCart className="cart-icon" style={{color: 'black'}}/>
+            <MdOutlineShoppingCart className="cart-icon" />
           </div>
         </div>
       </div>
@@ -73,22 +73,22 @@ const Header = () => {
                 </div>
                 <div className="txt-wrapper">
                   <div className="col-1-men col">
-                    <a href="#">Tops</a>
-                    <a href="#">Polo</a>
-                    <a href="#">Shirts</a>
-                    <a href="#">Tees</a>
+                    <Link to="/Men" >Tops</Link>
+                    <Link to="/Men" >Polo</Link>
+                    <Link to="/Men" >Shirts</Link>
+                    <Link to="/Men" >Tees</Link>
                   </div>
                   <div className="col-2 col">
-                    <a href="#">Bottoms</a>
-                    <a href="#">Inno-khaki</a>
-                    <a href="#">Jogger</a>
-                    <a href="#">Shorts</a>
+                    <Link to="/Men" >Bottoms</Link>
+                    <Link to="/Men" >Inno-khaki</Link>
+                    <Link to="/Men" >Jogger</Link>
+                    <Link to="/Men" >Shorts</Link>
                   </div>
                   <div className="col-3 col">
-                    <a href="#">G-motions</a>
+                    <Link to="/Men" >G-motions</Link>
                   </div>
                   <div className="col-4 col">
-                    <a href="#">Essentials</a>
+                    <Link to="/Men" >Essentials</Link>
                   </div>
                 </div>
               </div>
@@ -116,50 +116,50 @@ const Header = () => {
         </div>
 
         <div className="mobile-nav-items">
-          <Link to="/"  className='nav-name' onClick={() => setIsMenuOpen(false)}>Home</Link>
+          <Link to="/" className='nav-name' onClick={() => setIsMenuOpen(false)}>Home</Link>
 
           <div className="mobile-dropdown nav-name">
             <div className="dropdown-header">
-  <Link
-    to="/Men"
-    className="men-link"
-    onClick={() => setIsMenuOpen(false)}
-  >
-    Men
-  </Link>
-  <span
-    className={`arrow ${showMenDropdown ? "up" : "down"}`}
-    onClick={(e) => {
-      e.stopPropagation(); // prevent click bubbling
-      setShowMenDropdown(!showMenDropdown);
-    }}
-  >
-    ▼
-  </span>
-</div>
+              <Link
+                to="/Men"
+                className="men-link"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Men
+              </Link>
+              <span
+                className={`arrow ${showMenDropdown ? "up" : "down"}`}
+                onClick={(e) => {
+                  e.stopPropagation(); // prevent click bubbling
+                  setShowMenDropdown(!showMenDropdown);
+                }}
+              >
+                ▼
+              </span>
+            </div>
 
 
             {showMenDropdown && (
-              <div className="dropdown-content">
-                <a href="#">Tops</a>
-                <a href="#">Polo</a>
-                <a href="#">Shirts</a>
-                <a href="#">Tees</a>
-                <a href="#">Bottoms</a>
-                <a href="#">Inno-khaki</a>
-                <a href="#">Jogger</a>
-                <a href="#">Shorts</a>
-                <a href="#">G-motions</a>
-                <a href="#">Essentials</a>
+              <div className="dropdown-content" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/Men" >Tops</Link>
+                <Link to="/Men" >Polo</Link>
+                <Link to="/Men" >Shirts</Link>
+                <Link to="/Men" >Tees</Link>
+                <Link to="/Men" >Bottoms</Link>
+                <Link to="/Men" >Inno-khaki</Link>
+                <Link to="/Men" >Jogger</Link>
+                <Link to="/Men" >Shorts</Link>
+                <Link to="/Men">G-motions</Link>
+                <Link to="/Men" >Essentials</Link>
               </div>
             )}
           </div>
 
           <Link to="/Women" className='nav-name' onClick={() => setIsMenuOpen(false)}>Women</Link>
-          <Link to="/Juniors"  className='nav-name' onClick={() => setIsMenuOpen(false)}>Juniors</Link>
-          <Link to="/classic-club"  className='nav-name' onClick={() => setIsMenuOpen(false)}>Classic Club</Link>
-          <Link to="/winter"  className='nav-name' onClick={() => setIsMenuOpen(false)}>Winter Collection</Link>
-          <Link to="/new-arrival"  className='nav-name' onClick={() => setIsMenuOpen(false)}>New Arrivals</Link>
+          <Link to="/Juniors" className='nav-name' onClick={() => setIsMenuOpen(false)}>Juniors</Link>
+          <Link to="/classic-club" className='nav-name' onClick={() => setIsMenuOpen(false)}>Classic Club</Link>
+          <Link to="/winter" className='nav-name' onClick={() => setIsMenuOpen(false)}>Winter Collection</Link>
+          <Link to="/new-arrival" className='nav-name' onClick={() => setIsMenuOpen(false)}>New Arrivals</Link>
           <Link to="/clearence" className='nav-name' onClick={() => setIsMenuOpen(false)}>Clearance</Link>
         </div>
 
