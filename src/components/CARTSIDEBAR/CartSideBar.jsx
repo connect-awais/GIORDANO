@@ -2,9 +2,20 @@ import './CartSideBar.css';
 import { MdClose } from "react-icons/md";
 import { useCart } from '../../context/CartContext';
 import { AiOutlineClose } from 'react-icons/ai'; // cross for items
+import React, { useState } from 'react';
 
 function CartSidebar({ isOpen, onClose }) {
   const { cartItems, removeFromCart } = useCart(); // include remove function
+
+  const [loading, setLoading] = useState(false);
+  
+    const handleClick = () => {
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+        alert("Purchase Completed ✅");
+      }, 3000);
+    };
 
   return (
     <>
@@ -40,6 +51,25 @@ function CartSidebar({ isOpen, onClose }) {
             ))}
           </div>
         )}
+
+        {cartItems.length > 0 && (
+  <div className="cart-buy-now-wrapper">
+            <button
+        className={`buy-now-btn ${loading ? "loading" : ""}`}
+        onClick={handleClick}
+        disabled={loading}
+      >
+        {loading ? (
+          <>
+            <span className="spinner"></span>
+            Operation is in process...
+          </>
+        ) : (
+          "Buy it now"
+        )}
+      </button>
+  </div>
+)}
       </div>
     </>
   );

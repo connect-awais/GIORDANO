@@ -134,3 +134,54 @@ body {
 .cart-remove-icon:hover {
   color: red;
 }
+
+.cart-buy-now-wrapper {
+  padding: 15px;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+
+.buy-now-btn {
+  width: 100%;
+  padding: 1px 10px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buy-now-btn:hover {
+  background-color: #333;
+}
+
+/* When loading */
+.buy-now-btn.loading {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -31,6 +31,16 @@ const ProductDetail = () => {
     );
   }
 
+    const [loading, setLoading] = useState(false);
+
+  const handleClick = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      alert("Purchase Completed ✅");
+    }, 3000);
+  };
+
   return (
     <div>
     <div className="product-detail-container">
@@ -90,7 +100,20 @@ const ProductDetail = () => {
         </div>
 
         <button className="add-to-cart-btn" onClick={() => addToCart(product)}>Add to cart</button>
-        <button className="buy-now-btn">Buy it now</button>
+        <button
+        className={`buy-now-btn ${loading ? "loading" : ""}`}
+        onClick={handleClick}
+        disabled={loading}
+      >
+        {loading ? (
+          <>
+            <span className="spinner"></span>
+            Operation is in process...
+          </>
+        ) : (
+          "Buy it now"
+        )}
+      </button>
       </div>
       </div>
 

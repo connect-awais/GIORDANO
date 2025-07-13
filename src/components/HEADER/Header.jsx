@@ -26,6 +26,11 @@ const Header = () => {
     addToCart(product);   // add to cart
   };
 
+  const [isOpenDrop, setIsOpenDrop] = useState(false);
+
+  const handleLinkClick = () => {
+    setIsOpenDrop(false); // Close dropdown on link click
+  };
 
   return (
     <div>
@@ -64,8 +69,12 @@ const Header = () => {
         <div className="nav-items">
           <Link to="/">Home</Link>
 
-          <div className="dropdown">
-            <Link to="/Men">Men ▼</Link>
+          <div className="dropdown" 
+           onMouseEnter={() => setIsOpenDrop(true)}
+      onMouseLeave={() => setIsOpenDrop(false)}
+    >
+            <Link to="/Men" onClick={() => setIsOpenDrop(!isOpenDrop)}>Men ▼</Link>
+                {isOpenDrop && (
             <div className="hover-box">
               <div className="row-wrapper">
                 <div className="img-wrapper">
@@ -73,26 +82,27 @@ const Header = () => {
                 </div>
                 <div className="txt-wrapper">
                   <div className="col-1-men col">
-                    <Link to="/Men" >Tops</Link>
-                    <Link to="/Men" >Polo</Link>
-                    <Link to="/Men" >Shirts</Link>
-                    <Link to="/Men" >Tees</Link>
+                    <Link to="/Men" onClick={handleLinkClick}>Tops</Link>
+                    <Link to="/Men" onClick={handleLinkClick}>Polo</Link>
+                    <Link to="/Men" onClick={handleLinkClick}>Shirts</Link>
+                    <Link to="/Men" onClick={handleLinkClick}>Tees</Link>
                   </div>
                   <div className="col-2 col">
-                    <Link to="/Men" >Bottoms</Link>
-                    <Link to="/Men" >Inno-khaki</Link>
-                    <Link to="/Men" >Jogger</Link>
-                    <Link to="/Men" >Shorts</Link>
+                    <Link to="/Men" onClick={handleLinkClick}>Bottoms</Link>
+                    <Link to="/Men" onClick={handleLinkClick}>Inno-khaki</Link>
+                    <Link to="/Men" onClick={handleLinkClick}>Jogger</Link>
+                    <Link to="/Men" onClick={handleLinkClick}>Shorts</Link>
                   </div>
                   <div className="col-3 col">
-                    <Link to="/Men" >G-motions</Link>
+                    <Link to="/Men" onClick={handleLinkClick}>G-motions</Link>
                   </div>
                   <div className="col-4 col">
-                    <Link to="/Men" >Essentials</Link>
+                    <Link to="/Men" onClick={handleLinkClick}>Essentials</Link>
                   </div>
                 </div>
               </div>
             </div>
+            )}
           </div>
 
           <Link to="/Women">Women</Link>
