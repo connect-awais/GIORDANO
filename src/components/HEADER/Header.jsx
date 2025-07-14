@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import { IoIosSearch } from "react-icons/io";
@@ -32,6 +32,20 @@ const Header = () => {
     setIsOpenDrop(false); // Close dropdown on link click
   };
 
+  //for login
+   const [userFirstName, setUserFirstName] = useState('');
+
+  useEffect(() => {
+    const email = localStorage.getItem('loggedInUser');
+
+    if (email) {
+      const name = email.split('@')[0];            // e.g., "john.doe"
+      const first = name.split(/[._]/)[0];          // splits at . or _
+      const capitalized = first.charAt(0).toUpperCase() + first.slice(1);
+      setUserFirstName(capitalized);
+    }
+  }, []);
+
   return (
     <div>
       {/* === Header Top === */}
@@ -52,11 +66,15 @@ const Header = () => {
         </div>
 
         <div className="shopping-cart-links ">
-          <div className="shopping-link desktop-only">
-            <Link to="/SignIn" className='account-link'>Account
-              <MdPersonOutline />
-            </Link>
-          </div>
+           <div className="shopping-link desktop-only">
+      {userFirstName ? (
+        <span className="account-link user-name">👋 {userFirstName}</span>
+      ) : (
+        <Link to="/SignIn" className="account-link">
+          Account <MdPersonOutline />
+        </Link>
+      )}
+    </div>
           <div className="shopping-link" onClick={() => setIsCartOpen(true)}>
             <p className="add-to-cart-text" onClick={handleAdd}>Cart </p>
             <MdOutlineShoppingCart className="cart-icon" />
@@ -174,11 +192,15 @@ const Header = () => {
         </div>
 
         <Link to="/SignIn" style={{ textDecoration: 'none' }}>
-          <div className="mobile-shopping-link">
-            <MdPersonOutline className="account-icon" />
-            <p>LogIn/Create Account</p>
-          </div>
-        </Link>
+      <div className="mobile-shopping-link">
+        <MdPersonOutline className="account-icon" />
+        {userFirstName ? (
+          <p>👋 {userFirstName}</p>
+        ) : (
+          <p>LogIn/Create Account</p>
+        )}
+      </div>
+    </Link>
 
         <div className="mobile-social-links">
           <a href="https://www.facebook.com/Giordano.Pk" target='_blank'><FaFacebookF size={18} /></a>
