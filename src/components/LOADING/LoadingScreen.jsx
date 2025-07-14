@@ -4,9 +4,9 @@ import './LoadingScreen.css';
 
 const LoadingScreen = () => {
   return (
-    <div className="loading-overlay">
-      <div className="spinner"></div>
-      <p className="loading-text">Loading your experience...</p>
+    <div className="loading-overlay-start">
+      <div className="spinner-start"></div>
+      <p className="loading-text-start">Loading your experience...</p>
     </div>
   );
 };
