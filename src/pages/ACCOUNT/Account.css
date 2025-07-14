@@ -81,3 +81,121 @@
     max-width: 90vw;
   }
 }
+
+/* Full success screen */
+.success-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Typewriter text */
+.type-text {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: 'Courier New', monospace;
+  color: green;
+  white-space: pre;
+}
+
+/* Checkmark animation */
+.checkmark-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #e0ffe5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: popIn 0.5s ease forwards;
+}
+
+.checkmark {
+  width: 30px;
+  height: 15px;
+  border-left: 5px solid green;
+  border-bottom: 5px solid green;
+  transform: rotate(-45deg);
+  animation: stroke 0.4s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+@keyframes stroke {
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Home button */
+.home-btn {
+  margin-top: 30px;
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #000000, #434343);
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.2),
+    0 0 10px rgba(0, 0, 0, 0.3) inset;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.home-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 70%);
+  transform: rotate(45deg);
+  transition: opacity 0.4s;
+  opacity: 0;
+  z-index: -1;
+}
+
+.home-btn:hover::before {
+  opacity: 1;
+}
+
+.home-btn:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(255, 255, 255, 0.1) inset;
+}
+
+/* Existing spinner (for Continue button) */
+.mini-loader {
+  width: 20px;
+  height: 20px;
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: auto;
+}
+
+@media (max-width: 768px)
+{
+  .signin-container img {
+    margin-bottom: 0;
+  }
+
+  .type-text {
+    font-size: 18px;
+  }
+}
