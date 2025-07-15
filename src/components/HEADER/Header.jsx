@@ -66,15 +66,17 @@ const Header = () => {
         </div>
 
         <div className="shopping-cart-links ">
+          <Link to="/SignIn" className="account-link">
            <div className="shopping-link desktop-only">
       {userFirstName ? (
         <span className="account-link user-name">👋 {userFirstName}</span>
       ) : (
-        <Link to="/SignIn" className="account-link">
+        <div className="account-link">
           Account <MdPersonOutline />
-        </Link>
+        </div>
       )}
     </div>
+    </Link>
           <div className="shopping-link" onClick={() => setIsCartOpen(true)}>
             <p className="add-to-cart-text" onClick={handleAdd}>Cart </p>
             <MdOutlineShoppingCart className="cart-icon" />
