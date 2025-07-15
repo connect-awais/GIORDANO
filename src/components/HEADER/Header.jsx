@@ -21,6 +21,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showMenDropdown, setShowMenDropdown] = useState(false);
 
+
   const handleAdd = () => {
     if (!product) return; // prevent crash
     addToCart(product);   // add to cart

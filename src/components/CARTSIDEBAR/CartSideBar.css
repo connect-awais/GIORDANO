@@ -47,7 +47,7 @@ body {
   background-color: white;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
   transition: right 0.3s ease;
-  z-index: 1000;
+  z-index: 999;
   font-family: var(--main-family);
 }
 
