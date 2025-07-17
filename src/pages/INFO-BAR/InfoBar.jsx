@@ -15,15 +15,15 @@ const InfoBar = () => {
 
             <div className="bar-content">
             <div className="content-shipping">
-                <img src={done}/>
+                <img src={done} loading="lazy" alt='img'/>
                 <p>Exceptional quality from top <br />to bottom.</p>
             </div>
             <div className="content-shipping">
-                <img src={truck}/>
+                <img src={truck} loading="lazy" alt='img'/>
                 <p>Fast and free delivery <br />nationwide.</p>
             </div>
             <div className="content-shipping">
-                <img src={hand}/>
+                <img src={hand} loading="lazy" alt='img'/>
                 <p>100% customer satisfaction <br />guaranteed.</p>
             </div>
             </div>

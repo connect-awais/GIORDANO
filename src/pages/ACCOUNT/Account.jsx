@@ -49,7 +49,7 @@ const Account = () => {
   return (
     <div className="signin-container">
       <Link to="/">
-        <img src={Logo} alt="Logo" style={{ height: 'auto', width: '200px' }} />
+        <img src={Logo} alt="Logo" loading="lazy" style={{ height: 'auto', width: '200px' }} />
       </Link>
 
       {showSuccess ? (

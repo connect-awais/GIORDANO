@@ -2,15 +2,15 @@
 import CardSwiper from '../../components/PRODUCTS/CardSwiper'
 
 // Men
-import InfinitePolo from '../../assets/HERO-IMG/InfinitePolo.jpeg'
-import MensDenim from '../../assets/HERO-IMG/MensDenim.jpeg'
-import StripePolo from '../../assets/HERO-IMG/StripePolo.jpeg'
-import CouragePolo from '../../assets/HERO-IMG/CouragePolo.webp'
-import Ankle from '../../assets/HERO-IMG/PerformanceAnkles.webp'
-import PrintTee from '../../assets/HERO-IMG/PrintTee.webp'
-import BadgeCap from '../../assets/HERO-IMG/BadgeCap.webp'
-import JoggerPant from '../../assets/HERO-IMG/JoggerPant.webp'
-import LogoPolo from '../../assets/HERO-IMG/LogoPolo.webp'
+import InfinitePolo from '../../assets/HERO-IMG/InfinitePolo.avif'
+import MensDenim from '../../assets/HERO-IMG/MensDenim.avif'
+import StripePolo from '../../assets/HERO-IMG/StripePolo.avif'
+import CouragePolo from '../../assets/HERO-IMG/CouragePolo.avif'
+import Ankle from '../../assets/HERO-IMG/PerformanceAnkles.avif'
+import PrintTee from '../../assets/HERO-IMG/PrintTee.avif'
+import BadgeCap from '../../assets/HERO-IMG/BadgeCap.avif'
+import JoggerPant from '../../assets/HERO-IMG/JoggerPant.avif'
+import LogoPolo from '../../assets/HERO-IMG/LogoPolo.avif'
 
 //Women
 import NapoloenPolo from '../../assets/HERO-IMG/Women/NapoloenPolo.webp'

@@ -7,7 +7,7 @@ const Arrival = () => {
   return (
     <div>
         <div className="men-banner">
-              <img src={ArrivalBanner}/>
+              <img src={ArrivalBanner} loading="lazy" alt='banner'/>
               </div>
               <ArrivalHero/>
     </div>

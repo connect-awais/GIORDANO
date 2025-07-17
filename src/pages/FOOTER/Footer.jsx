@@ -43,9 +43,9 @@ const Footer = () => {
 
             <div className="after-border">
             <div className="foot-social-links">
-                    <a href="https://www.facebook.com/Giordano.Pk" target='_blank'><FaFacebookF size={18}/></a>
-                    <a href="https://www.youtube.com/@giordanopakistanofficial939" target='_blank'><FaYoutube size={21}/></a>
-                    <a href="https://www.instagram.com/giordanopakofficial/" target='_blank'><FaInstagram size={18}/></a>
+                    <a href="https://www.facebook.com/Giordano.Pk" target='_blank' aria-label="Visit Giordano Pakistan on Facebook"><FaFacebookF size={18}/></a>
+                    <a href="https://www.youtube.com/@giordanopakistanofficial939" target='_blank' aria-label="Visit Giordano Pakistan on Facebook"><FaYoutube size={21}/></a>
+                    <a href="https://www.instagram.com/giordanopakofficial/" target='_blank' aria-label="Visit Giordano Pakistan on Facebook"><FaInstagram size={18}/></a>
                 </div>
 
                 <div className="copyright-txt">

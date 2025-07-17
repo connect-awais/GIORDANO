@@ -9,7 +9,7 @@ const MenBanner = () => {
   return (
     <div>
       <div className="men-banner">
-      <img src={MenBannerImg}/>
+      <img src={MenBannerImg} loading="lazy" alt='banner'/>
       </div>
 
       <MenHero/>

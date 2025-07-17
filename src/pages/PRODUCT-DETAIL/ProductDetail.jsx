@@ -23,6 +23,8 @@ const ProductDetail = () => {
   window.scrollTo({ top: 0, behavior: 'instant' }); // prevents scroll flash
 }, []);
 
+const [loading, setLoading] = useState(false);
+
   if (!product) {
     return (
       <div style={{ padding: '32px' }}>
@@ -31,7 +33,7 @@ const ProductDetail = () => {
     );
   }
 
-    const [loading, setLoading] = useState(false);
+    
 
   const handleClick = () => {
     setLoading(true);
@@ -49,7 +51,7 @@ const ProductDetail = () => {
           src={product.image}
           alt={product.title}
           className="main-product-image"
-          loading="eager"
+          loading="lazy"
         />
         <div className="carousel-arrow left">&#8249;</div>
         <div className="carousel-arrow right">&#8250;</div>
@@ -118,7 +120,7 @@ const ProductDetail = () => {
       </div>
 
       <div className="chart">
-      <img src={SizeChart} />
+      <img src={SizeChart} loading="lazy" alt='chart'/>
       </div>
     </div>
   );

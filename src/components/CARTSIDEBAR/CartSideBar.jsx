@@ -37,7 +37,7 @@ function CartSidebar({ isOpen, onClose }) {
           <div className="cart-items-wrapper">
             {cartItems.map((item) => (
               <div className="cart-item" key={item.id}>
-                <img src={item.image} alt={item.title} className="cart-item-image" />
+                <img src={item.image} alt={item.title} loading="lazy" className="cart-item-image" />
                 <div className="cart-item-info">
                   <p className="cart-item-title">{item.title}</p>
                   <p className="cart-item-price">Rs.{item.price.toLocaleString()}</p>

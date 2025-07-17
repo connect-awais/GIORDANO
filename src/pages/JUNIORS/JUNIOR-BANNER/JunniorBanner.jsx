@@ -8,7 +8,7 @@ const Junior = () => {
   return (
     <div>
       <div className="men-banner">
-      <img src={JuniorBanner}/>
+      <img src={JuniorBanner} loading="lazy" alt='banner'/>
       </div>
 
       <JuniorHero/>

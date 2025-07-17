@@ -8,7 +8,7 @@ const Clearence = () => {
   return (
     <div>
         <div className="men-banner">
-              <img src={ClearenceBanner}/>
+              <img src={ClearenceBanner} loading="lazy" alt='banner'/>
               </div>
               <ClearenceHero/>
     </div>

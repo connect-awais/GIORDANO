@@ -1,10 +1,10 @@
-import Banner1 from '../../assets/BANNER-IMG/Banner.jpeg'
-import Banner2 from '../../assets/BANNER-IMG/Banner-2.jpeg'
-import Banner3 from '../../assets/BANNER-IMG/Banner-3.jpeg'
+import Banner1 from '../../assets/BANNER-IMG/Banner.avif'
+import Banner2 from '../../assets/BANNER-IMG/Banner-2.avif'
+import Banner3 from '../../assets/BANNER-IMG/Banner-3.avif'
 
-import Phone1 from '../../assets/BANNER-IMG/phone-1.jpeg'
-import Phone2 from '../../assets/BANNER-IMG/phone-2.jpeg'
-import Phone3 from '../../assets/BANNER-IMG/phone-3.jpeg'
+import Phone1 from '../../assets/BANNER-IMG/phone-1.avif'
+import Phone2 from '../../assets/BANNER-IMG/phone-2.avif'
+import Phone3 from '../../assets/BANNER-IMG/phone-3.avif'
 
 import Hero from '../HERO/Hero'
 import Category from '../CATEGORY/Category'
@@ -84,6 +84,8 @@ useEffect(() => {
         src={isMobile ? slide.mobile : slide.desktop}
         alt={`Slide ${index + 1}`}
         style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+        loading="lazy"
+        fetchPriority="high"
       />
     </SwiperSlide>
   ))}

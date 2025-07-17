@@ -26,31 +26,31 @@ const Category = () => {
           <div className="col-1">
             <Link to="/Men" style={{ textDecoration: 'none', color: 'black' }}>
               <div className="img-txt">
-                <img src={POLO} />
+                <img src={POLO} loading="lazy" alt='img'/>
                 <p>Polo</p>
               </div>
             </Link>
             <Link to="/Men" style={{ textDecoration: 'none', color: 'black' }}>
               <div className="img-txt">
-                <img src={SHIRTS} />
+                <img src={SHIRTS} loading="lazy" alt='img'/>
                 <p>Shirts</p>
               </div>
             </Link>
             <Link to="/Men" style={{ textDecoration: 'none', color: 'black' }}>
               <div className="img-txt">
-                <img src={TEES} />
+                <img src={TEES} loading="lazy" alt='img'/>
                 <p>Tees</p>
               </div>
             </Link>
             <Link to="/Men" style={{ textDecoration: 'none', color: 'black' }}>
               <div className="img-txt">
-                <img src={GMOTION} />
+                <img src={GMOTION} loading="lazy" alt='img'/>
                 <p>G-Motion</p>
               </div>
             </Link>
             <Link to="/Men" style={{ textDecoration: 'none', color: 'black' }}>
               <div className="img-txt">
-                <img src={BOTTOMS} />
+                <img src={BOTTOMS} loading="lazy" alt='img'/>
                 <p>Bottoms</p>
               </div>
             </Link>
@@ -58,31 +58,31 @@ const Category = () => {
           <div className="col-1">
             <Link to="/Women" style={{ textDecoration: 'none', color: 'black' }}>
               <div className="img-txt">
-                <img src={WOMEN} />
+                <img src={WOMEN} loading="lazy" alt='img'/>
                 <p>Women</p>
               </div>
             </Link>
             <Link to="/Juniors" style={{ textDecoration: 'none', color: 'black' }}>
               <div className="img-txt">
-                <img src={JUNIORS} />
+                <img src={JUNIORS} loading="lazy" alt='img'/>
                 <p>Juniors</p>
               </div>
             </Link>
             <Link to="/Men" style={{ textDecoration: 'none', color: 'black' }}>
               <div className="img-txt">
-                <img src={ESSENTIALS} />
+                <img src={ESSENTIALS} loading="lazy" alt='img'/>
                 <p>Essentials</p>
               </div>
             </Link>
             <Link to="/Men" style={{ textDecoration: 'none', color: 'black' }}>
               <div className="img-txt">
-                <img src={CAPS} />
+                <img src={CAPS} loading="lazy" alt='img'/>
                 <p>Caps</p>
               </div>
             </Link>
             <Link to="/clearence" style={{ textDecoration: 'none', color: 'black' }}>
               <div className="img-txt">
-                <img src={CLEARENCE} />
+                <img src={CLEARENCE} loading="lazy" alt='img'/>
                 <p>Clearence</p>
               </div>
             </Link>

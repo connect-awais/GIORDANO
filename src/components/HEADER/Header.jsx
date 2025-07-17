@@ -62,7 +62,7 @@ const Header = () => {
 
         <div className="logo">
           <Link to="/">
-            <img src={Logo} />
+            <img src={Logo} loading="lazy" alt="logo"/>
           </Link>
         </div>
 
@@ -98,8 +98,8 @@ const Header = () => {
                 {isOpenDrop && (
             <div className="hover-box">
               <div className="row-wrapper">
-                <div className="img-wrapper">
-                  <img src={MenImg} />
+                <div className="img-wrapper" >
+                  <img src={MenImg} loading="lazy" alt='menimg'/>
                 </div>
                 <div className="txt-wrapper">
                   <div className="col-1-men col">
@@ -206,9 +206,9 @@ const Header = () => {
     </Link>
 
         <div className="mobile-social-links">
-          <a href="https://www.facebook.com/Giordano.Pk" target='_blank'><FaFacebookF size={18} /></a>
-          <a href="https://www.youtube.com/@giordanopakistanofficial939" target='_blank'><FaYoutube size={21} /></a>
-          <a href="https://www.instagram.com/giordanopakofficial/" target='_blank'><FaInstagram size={18} /></a>
+          <a href="https://www.facebook.com/Giordano.Pk" target='_blank' aria-label="Visit Giordano Pakistan on Facebook"><FaFacebookF size={18} /></a>
+          <a href="https://www.youtube.com/@giordanopakistanofficial939" target='_blank' aria-label="Visit Giordano Pakistan on Facebook"><FaYoutube size={21} /></a>
+          <a href="https://www.instagram.com/giordanopakofficial/" target='_blank' aria-label="Visit Giordano Pakistan on Facebook"><FaInstagram size={18} /></a>
         </div>
 
         <div className="mobile-txt">

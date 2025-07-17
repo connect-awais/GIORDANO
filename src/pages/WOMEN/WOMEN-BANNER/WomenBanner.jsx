@@ -7,7 +7,7 @@ const WomenBanner = () => {
   return (
     <div>
       <div className="men-banner">
-      <img src={WomenBannerImg}/>
+      <img src={WomenBannerImg} loading="lazy" alt='banner'/>
       </div>
 
       <WomenHero/>
